@@ -1,0 +1,47 @@
+@media screen and (max-width: 450px) {
+    .search input {
+        max-width: 170px;
+    }
+}
+
+@media screen and (min-width: 540px) {
+    .booking {
+        padding: 40px;
+    }
+
+    .booking main form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 18px;
+    }
+
+    label[for='to']{
+        grid-row-start: 1;
+        grid-column-start: 2;
+    }
+
+    /* GOOD OFFERS */
+
+    #offers .locations {
+        grid-template-columns: repeat(4, 1fr);   
+    }
+
+    #featured {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+    /* EXPLORE */
+
+    #explore .locations {
+        grid-template-columns: repeat(2, 1fr);   
+    }
+}
+
+@media screen and (min-width: 1102px) {
+    .container {
+        margin: auto;
+    }
+}
